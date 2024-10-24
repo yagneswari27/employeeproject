@@ -4,7 +4,7 @@ import java.util.List;
 
 
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -20,11 +20,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.rest.spring.dto.EmployeeDto;
 import com.rest.spring.service.EmployeeService;
 
+import lombok.AllArgsConstructor;
+
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/api/employees")
+@AllArgsConstructor
 public class EmployeeController {
-	@Autowired
+	//@Autowired
 	private EmployeeService employeeService;
 	//Build Add Employee Rest API
 	@PostMapping

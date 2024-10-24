@@ -3,6 +3,7 @@ package com.rest.spring.service.impl;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.rest.spring.dto.EmployeeDto;
@@ -17,6 +18,7 @@ import lombok.AllArgsConstructor;
 @Service
 @AllArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
+	//@Autowired
 	private EmployeeRepo employeeRepo;
 	@Override
 	public EmployeeDto createEmployee(EmployeeDto employeeDto) {
